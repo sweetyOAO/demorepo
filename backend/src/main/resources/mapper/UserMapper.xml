@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.example.backend.mapper.UserMapper">
+
+    <select id="getOneUser" resultType="org.example.backend.entity.vo.UserVO">
+        SELECT
+            u.id,
+            u.email,
+            p.username,
+            p.is_admin AS isAdmin,
+            p.created_at AS createdAt
+        FROM auth.users u
+                 JOIN public.user_profiles p ON u.id = p.id
+            LIMIT 1
+    </select>
+
+</mapper>

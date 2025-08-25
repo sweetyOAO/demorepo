@@ -1,0 +1,26 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: supabase-mysql-demo
+#  datasource:
+#    url:
+#    username:
+#    password:
+#    driver-class-name:
+  datasource:
+    url: jdbc:postgresql://aws-1-ap-southeast-1.pooler.supabase.com:6543/postgres?sslmode=require
+    username: postgres.qgqtadhpqirxnscpfgle
+    password: Q/#q3j4-ENms3ax
+    driver-class-name: org.postgresql.Driver
+
+# Supabase 配置
+supabase:
+  project-id: qgqtadhpqirxnscpfgle
+  anon-key: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFncXRhZGhwcWlyeG5zY3BmZ2xlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTUxNTYzNzAsImV4cCI6MjA3MDczMjM3MH0.0505ORLaNp7LPT7vRT1_9zH4jS_NnvQqj4lr03lE5Ew          # 替换为 Supabase 的匿名 API 密钥
+  jwt-secret: 4/I5KmZz0YR6wITNsCTFagZ/omYAE3Dd9AoDqliL1cYukTUawPPnq7uwOrzzu3ENudPmJZzQLgcr8Bbjy5Z8tA==
+  api-url: https://qgqtadhpqirxnscpfgle.supabase.co
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.example.demo.entity

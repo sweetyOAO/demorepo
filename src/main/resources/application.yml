@@ -1,0 +1,17 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: supabase-mysql-demo
+#  datasource:  # MySQL 配置（用户自定义部分）
+#    url: jdbc:mysql://localhost:3306/mydb
+#    username: root
+#    password: your_mysql_password
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+
+# Supabase 配置
+supabase:
+  project-id: qgqtadhpqirxnscpfgle      # 替换为 Supabase 控制台中的 Project ID
+  anon-key: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFncXRhZGhwcWlyeG5zY3BmZ2xlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTUxNTYzNzAsImV4cCI6MjA3MDczMjM3MH0.0505ORLaNp7LPT7vRT1_9zH4jS_NnvQqj4lr03lE5Ew          # 替换为 Supabase 的匿名 API 密钥
+  jwt-secret: 4/I5KmZz0YR6wITNsCTFagZ/omYAE3Dd9AoDqliL1cYukTUawPPnq7uwOrzzu3ENudPmJZzQLgcr8Bbjy5Z8tA==      # JWT 签名密钥
+  api-url: https://qgqtadhpqirxnscpfgle.supabase.co  # API 地址
