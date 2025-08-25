@@ -24,6 +24,7 @@ public class UserController {
     @GetMapping("/getusers")
     public List<UserVO> getUsers() {
         System.out.println("调用getusers");
+        log.info("调用getusers");
         List<UserVO> list = new ArrayList<>();
 
         UserVO u1 = new UserVO();
